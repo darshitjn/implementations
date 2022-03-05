@@ -23,4 +23,8 @@ class FenwickTree {
     }
     return v;
   }
+ 
+ T get(int x, int y) {  // [x, y]
+        return (get(y) - get(x - 1));
+  }
 };
